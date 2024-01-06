@@ -17,6 +17,11 @@
 // ここからはテストなので変更を加えないでください
 console.log("*** 問題1 ***");
 
+function isOdd(num){
+  if(num % 2 === 0){
+    return false;
+  }return true;
+}
 
 test(isOdd(2), false);
 test(isOdd(5), true);
@@ -42,7 +47,14 @@ test(isOdd(10), false);
  */
 
 // ここに関数を定義しましょう
-
+function addObj(obj,key,value){
+  let result = {};
+  for(const i in obj ){
+     result[i] = obj[i];
+     result[key] = value;
+  }
+  return result
+}
 
 // ここからはテストなので変更を加えないでください
 console.log("*** 問題2 ***");
@@ -114,7 +126,15 @@ test(addObj(testObj, "address", "Tokyo"), expectObj);
  */
 
 // ここに関数を定義しましょう
-
+function countApple(obj2){
+  let count = 0;
+  for(let key2 in obj2){
+    if(obj2[key2] === "apple"){
+      count += 1;
+    }
+    
+  }return count;
+}
 
 // ここからはテストなので変更を加えないでください
 console.log("*** 問題3 ***");
@@ -167,7 +187,9 @@ test(countApple(testObj), 0);
  */
 
 // ここに関数を定義しましょう
-
+function reverse(array){
+  return array.reverse();
+}
 
 // ここからはテストなので変更を加えないでください
 console.log("*** 問題4 ***");
@@ -196,7 +218,9 @@ test(reverse(["zero"]), ["zero"]);
  */
 
 // ここに関数を定義しましょう
-
+function diffNumber(arr1,arr2){
+  return arr1.filter(x => !arr2.includes(x));
+}
 
 // ここからはテストなので変更を加えないでください
 console.log("*** 問題5 ***");
