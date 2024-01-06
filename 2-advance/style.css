@@ -1,0 +1,14 @@
+#button{
+    background-color: lightpink;
+    border-radius: 1rem;
+    border: 1px solid #b3afaf;
+    font-size: 1rem;  
+}
+
+body {
+    font-family:'Comic Sans MS','HG丸ｺﾞｼｯｸM-PRO';
+    color: rgb(110, 109, 109);
+    background-color: #9ec5f560;
+    
+    }
+  
